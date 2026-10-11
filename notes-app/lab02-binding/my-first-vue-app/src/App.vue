@@ -26,6 +26,16 @@
 
     <p v-if="notes.length === 0">暂无笔记，快添加一条吧</p>
     <p v-show="notes.length > 0">共 {{ notes.length }} 条</p>
+      <hr />
+    <h2>🎯 事件实验室（2.4—2.5）</h2>
+    <EventLab />
+ <input
+  v-model="newNote"
+  placeholder="输入笔记内容"
+  @keyup.enter="addNote"
+  @keyup.esc="newNote = ''"
+/>
+
   </div>
   
 
@@ -33,8 +43,9 @@
 
 <script>
 import NoteCard from './components/NoteCard.vue'
+import EventLab from './components/EventLab.vue'
 export default {
-  components: { NoteCard },
+  components: { NoteCard, EventLab  },
   data() {
     return {
       newNote: '',      // 输入框内容
