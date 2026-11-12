@@ -109,4 +109,3 @@ export default {
   color: var(--muted);
 }
 </style>
-

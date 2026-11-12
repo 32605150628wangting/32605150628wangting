@@ -71,10 +71,3 @@ subjects: ['语文', '数学', 'Vue']
 <style scoped>
 .note-card { border: 1px solid #42b883; padding: 10px 16px; border-radius: 6px; }
 </style>
-
-
-
-
-
-
-
